@@ -10,6 +10,7 @@ module.exports = async () => {
       data: response.data.upcomingMovieData,
     };
   } catch (err) {
+    console.log(__filename, err);
     return {
       success: false,
       msg: "Something went wrong",
